@@ -4,6 +4,7 @@ require './Setup'
 require './Inputs'
 require './gameLoop'
 require './won'
+require './Clones'
 
 class Runner
   Outputs.welcome

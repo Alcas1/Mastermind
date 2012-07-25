@@ -3,6 +3,7 @@ require './Inputs'
 require './outputs'
 require './Setup'
 require './won'
+require './Clones'
 
 class GameLoop
   def self.gameLoop
@@ -16,19 +17,24 @@ class GameLoop
 
       while Setup.getGuessLength>0
         Outputs.colorNumber(Setup.getGuessArray.length+1)
-        color=Inputs.input
-        while color<1||color>8
+        color=Inputs.input.to_i
+        while color!=1&&color!=2&&color!=3&&color!=4&&color!=5&&color!=6&&color!=7&&color!=8
           Outputs.inputColor
-          color=Inputs.input
+          color=Inputs.input.to_i
         end
         Setup.setGuessLength(-1)
-        Setup.addToGuessArray Mastermind.colorGet(color)
+        Setup.addToGuessArray color
       end
       Setup.addToAllGuesses Setup.getGuessArray
-      Outputs.pegs Mastermind.try(Setup.getGuessArray,Setup.getAnswer).to_s
-      Outputs.won? Mastermind.winTest(Setup.getTurns,Mastermind.try(Setup.getGuessArray,Setup.getAnswer),Setup.getAnswer)
+      sudoGuessArray=MakeClone.ofGuessArray
+      sudoAnswer=MakeClone.ofAnswer
+      guess2s= Mastermind.find2s(sudoGuessArray,sudoAnswer)
+      guess1s= Mastermind.find1s(guess2s,sudoAnswer)
+      pegs= Mastermind.find0s(guess1s,sudoAnswer)
+      Outputs.pegs pegs
       Won.wonTest
       Won.lostTest
+      Won.wrong
     end
   end
 end

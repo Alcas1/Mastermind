@@ -8,10 +8,10 @@ class Mastermind
     end
     finishedBoard
   end
-  def self.try(guess,answer)
+  def self.find2s guess,answer
     output =[]
     sudoGuess=guess
-    colors=[0,0,0,0,0,0,0,0,0]
+
     count=sudoGuess.length
 
     while count>0
@@ -22,9 +22,10 @@ class Mastermind
         sudoGuess[count]=0
       end
     end
-    if output.length==sudoGuess.length
-      return output
-    end
+    output
+  end
+  def self.find1s guess2s,answer
+    colors=[0,0,0,0,0,0,0,0,0]
     count=answer.length
     while count>0
       count-=1
@@ -32,18 +33,20 @@ class Mastermind
         colors[answer[count]]+=1
       end
     end
-    #return colors
     count=answer.length
     while count>0 do count-=1
-    if colors[sudoGuess[count]] > 0
-      colors[sudoGuess[count]]-=1
-      output << 1
+    if colors[guess2s[count]] > 0
+      colors[guess2s[count]]-=1
+      guess2s << 1
     end
+      guess2s
     end
-    while output.length < sudoGuess.length
-      output<<0
+    def find0s guess1s,answer
+      while guess1s.length < answer.length
+        guess1s<<0
+      end
+      guess1s.sort().reverse
     end
-    output.sort().reverse
 
 
 
@@ -62,11 +65,11 @@ class Mastermind
 
   def self.getOutput(pegs)
     if pegs==2
-    return "Red peg"
+      return "Red peg"
     elsif pegs==1
-    return "White peg"
+      return "White peg"
     else
-    return "No peg"
+      return "No peg"
     end
 
 

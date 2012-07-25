@@ -18,11 +18,11 @@ describe Mastermind do
   end
   it "tries green" do
     Mastermind.try([2,2,2,2],[2,2,2,2]).should == [2,2,2,2]
-    Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2])
+    Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You Win!"
   end
   it "tries blue" do
     Mastermind.try([3,3,3,3],[3,3,3,3]).should == [2,2,2,2]
-    Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2])
+    Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You Win!"
     end
   it "tries yellow" do
     Mastermind.try([4,4,4,4],[4,4,4,4]).should == [2,2,2,2]
@@ -42,9 +42,11 @@ describe Mastermind do
   end
   it "gets first wrong color" do
     Mastermind.try([1,2,2,2],[2,2,2,2]).should == [2,2,2,0]
+    Mastermind.winTest(10,Mastermind.try([1,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You lost"
   end
   it "gets 2 wrong colors" do
     Mastermind.try([1,1,2,2],[2,2,2,2]).should == [2,2,0,0]
+    Mastermind.winTest(5,Mastermind.try([1,1,2,2],[2,2,2,2]),[2,2,2,2]).should=="Wrong"
   end
   it "gets 3 wrong colors" do
     Mastermind.try([1,1,1,2],[2,2,2,2]).should == [2,0,0,0]

@@ -14,7 +14,7 @@ class Outputs
     puts "You Lose!"
   end
   def self.inputColor
-    puts "Input a Color:"
+    puts "Input a Color:1-8"
   end
   def self.colorNumber(length)
     puts "Color##{length}"
@@ -24,5 +24,8 @@ class Outputs
   end
   def self.pegs(which)
     puts which
+  end
+  def self.wrong
+    puts "wrong"
   end
 end
