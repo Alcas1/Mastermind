@@ -1,4 +1,4 @@
-module Mastermind
+class Mastermind
 
   def self.randomBoard(codeLength)
     finishedBoard=[]
@@ -58,29 +58,6 @@ module Mastermind
     else
       return "Wrong"
     end
-  end
-
-  def self.colorGet(color)
-    if color=="red\n"
-    return 1
-    elsif color=="green\n"
-    return 2
-    elsif color=="blue\n"
-    return 3
-    elsif color=="yellow\n"
-    return 4
-    elsif color=="brown\n"
-    return 5
-    elsif color=="orange\n"
-    return 6
-    elsif color=="black\n"
-    return 7
-    elsif color=="white\n"
-    return 8
-    else
-    return 0
-    end
-
   end
 
   def self.getOutput(pegs)
