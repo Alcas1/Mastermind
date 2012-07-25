@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tester1_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tester1_spec.rb">
+      <file leaf-file-name="testcolors_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testcolors_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="17" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0">
+            <state line="40" column="78" selection-start="1162" selection-end="1162" vertical-scroll-proportion="1.1764706">
               <folding />
             </state>
           </provider>
@@ -34,16 +34,16 @@
       <file leaf-file-name="mastermind.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mastermind.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="24" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+            <state line="63" column="4" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.rb">
+      <file leaf-file-name="runner.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runner.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="106" selection-start="166" selection-end="166" vertical-scroll-proportion="0.19450802">
+            <state line="10" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,10 +60,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/tester_spec.rb" />
-        <option value="$PROJECT_DIR$/runner.rb" />
-        <option value="$PROJECT_DIR$/tester1_spec.rb" />
         <option value="$PROJECT_DIR$/mastermind.rb" />
         <option value="$PROJECT_DIR$/test.rb" />
+        <option value="$PROJECT_DIR$/runner.rb" />
+        <option value="$PROJECT_DIR$/tester1_spec.rb" />
+        <option value="$PROJECT_DIR$/testcolors_spec.rb" />
       </list>
     </option>
   </component>
@@ -115,16 +116,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,17 +140,27 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="RSpec.tester1_spec">
+  <component name="RunManager" selected="RSpec.runnerer1_spec">
     <configuration default="false" name="Mastermind" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Mastermind" />
@@ -206,7 +207,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="tester1_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="runnerer1_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Mastermind" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -220,7 +221,7 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/tester1_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="C:\Users\Jon\RubymineProjects\Mastermind\testcolors_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
@@ -297,11 +298,11 @@
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="RSpec.Mastermind" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.mastermind" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.tester1_spec" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.runnerer1_spec" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.tester1_spec" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.runnerer1_spec" />
       </list>
     </recent_temporary>
   </component>
@@ -334,23 +335,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.069196425" sideWeight="0.6704417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13767342" sideWeight="0.6714761" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32852387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -409,7 +410,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tester1_spec.rb">
+    <entry file="file://$PROJECT_DIR$/testcolors_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="17" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0">
           <folding />
@@ -423,14 +424,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.rb">
+    <entry file="file://$PROJECT_DIR$/runner.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="29" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tester1_spec.rb">
+    <entry file="file://$PROJECT_DIR$/testcolors_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="59" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
           <folding />
@@ -444,7 +445,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tester1_spec.rb">
+    <entry file="file://$PROJECT_DIR$/testcolors_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="37" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.0" />
       </provider>
@@ -457,11 +458,6 @@
     <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="779" column="0" selection-start="26711" selection-end="26711" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="19" selection-end="98" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-expectations-2.11.1/lib/rspec/matchers/operator_matcher.rb">
@@ -481,26 +477,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runner.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="32" selection-end="32" vertical-scroll-proportion="0.030088495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester1_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="17" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0">
+        <state line="10" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mastermind.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="24" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+        <state line="63" column="4" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.rb">
+    <entry file="file://$PROJECT_DIR$/testcolors_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="106" selection-start="166" selection-end="166" vertical-scroll-proportion="0.19450802">
+        <state line="40" column="78" selection-start="1162" selection-end="1162" vertical-scroll-proportion="1.1764706">
           <folding />
         </state>
       </provider>
