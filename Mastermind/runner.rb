@@ -3,7 +3,7 @@ require './outputs'
 require './Setup'
 require './Inputs'
 require './gameLoop'
-require './won'
+require './test_for_win'
 require './Clones'
 
 class Runner

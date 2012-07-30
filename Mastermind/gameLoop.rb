@@ -8,7 +8,7 @@ require './Clones'
 class GameLoop
   def self.gameLoop
     while !Setup.getWon && !Setup.getLost
-      Setup.setTurns(1)
+      Setup.addTurns(1)
       count=Setup.getAllGuesses.length
       Setup.gameLoop
       while count>0 do count-=1
@@ -22,7 +22,7 @@ class GameLoop
           Outputs.inputColor
           color=Inputs.input.to_i
         end
-        Setup.setGuessLength(-1)
+        Setup.addGuessLength(-1)
         Setup.addToGuessArray color
       end
       Setup.addToAllGuesses Setup.getGuessArray

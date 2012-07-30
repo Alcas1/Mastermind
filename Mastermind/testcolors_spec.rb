@@ -13,6 +13,9 @@ require './mastermind'
 
 describe Mastermind do
   it "tries red" do
+    Mastermind.find2s([1,1,1,1],[1,1,1,1]).should == [2,2,2,2]
+    Mastermind.find1s([2,2,2,2],[1,1,1,1]).should == [2,2,2,2]
+    Mastermind.find0s([2,2,2,2],[1,1,1,1]).should == [2,2,2,2]
     Mastermind.try([1,1,1,1],[1,1,1,1]).should == [2,2,2,2]
     Mastermind.winTest(0,Mastermind.try([1,1,1,1],[1,1,1,1]),[2,2,2,2]).should=="You Win!"
   end
@@ -23,19 +26,19 @@ describe Mastermind do
   it "tries blue" do
     Mastermind.try([3,3,3,3],[3,3,3,3]).should == [2,2,2,2]
     Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You Win!"
-    end
+  end
   it "tries yellow" do
     Mastermind.try([4,4,4,4],[4,4,4,4]).should == [2,2,2,2]
     Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2])
   end
-    it "tries brown" do
-      Mastermind.try([5,5,5,5],[5,5,5,5]).should == [2,2,2,2]
-      end
+  it "tries brown" do
+    Mastermind.try([5,5,5,5],[5,5,5,5]).should == [2,2,2,2]
+  end
   it "tries orange" do
-      Mastermind.try([6,6,6,6],[6,6,6,6]).should == [2,2,2,2]
-    end
+    Mastermind.try([6,6,6,6],[6,6,6,6]).should == [2,2,2,2]
+  end
   it "tries black" do
-      Mastermind.try([7,7,7,7],[7,7,7,7]).should == [2,2,2,2]
+    Mastermind.try([7,7,7,7],[7,7,7,7]).should == [2,2,2,2]
   end
   it "tries white" do
     Mastermind.try([8,8,8,8],[8,8,8,8]).should == [2,2,2,2]

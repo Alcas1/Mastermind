@@ -18,7 +18,7 @@ class Setup
   def self.getTurns
     @turns
   end
-  def self.setTurns amount
+  def self.addTurns amount
     @turns+=amount
   end
   def self.getWon
@@ -43,7 +43,7 @@ class Setup
   def self.getGuessLength
     @guessLength
   end
-  def self.setGuessLength amount
+  def self.addGuessLength amount
     @guessLength+=amount
   end
 
