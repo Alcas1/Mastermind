@@ -12,7 +12,7 @@ class GameLoop
       count=Setup.getAllGuesses.length
       Setup.gameLoop
       while count>0 do count-=1
-      Outputs.guessesDisplay(Setup.getAllGuesses[count].to_s)
+        Outputs.guessesDisplay(Setup.getAllGuesses[count].to_s)
       end
 
       while Setup.getGuessLength>0
@@ -28,10 +28,14 @@ class GameLoop
       Setup.addToAllGuesses Setup.getGuessArray
       sudoGuessArray=MakeClone.ofGuessArray
       sudoAnswer=MakeClone.ofAnswer
-      guess2s= Mastermind.find2s(sudoGuessArray,sudoAnswer)
-      guess1s= Mastermind.find1s(guess2s,sudoAnswer)
+      output= Mastermind.find2s(sudoGuessArray,sudoAnswer)
+      guess1s= Mastermind.find1s(output,sudoGuessArray,sudoAnswer)
       pegs= Mastermind.find0s(guess1s,sudoAnswer)
-      Outputs.pegs pegs
+      i=0
+      while i<pegs.length
+        puts Mastermind.getOutput(pegs[i])
+        i+=1
+      end
       Won.wonTest
       if !Setup.getWon
         Outputs.wrong
