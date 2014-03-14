@@ -6,14 +6,13 @@ require './gameLoop'
 
 
 class Setup
-  attr_accessor :turns,:won,:lost,:allGuesses,:codeLength,:guessArray,:guessLength,:answer
+  attr_accessor :turns,:won,:lost,:allGuesses,:guessArray,:guessLength,:answer
   def self.start
     @turns=0
     @won=false
     @lost=false
     @allGuesses=[]
-    @codeLength=Inputs.input.to_i
-    @answer=Mastermind.randomBoard @codeLength
+    @answer=Mastermind.randomBoard 4
   end
   def self.getTurns
     @turns
@@ -35,9 +34,6 @@ class Setup
   end
   def self.getAnswer
     @answer
-  end
-  def self.getCodeLength
-    @codeLength
   end
 
   def self.getGuessLength
@@ -63,6 +59,6 @@ class Setup
 
   def self.gameLoop
     @guessArray=[]
-    @guessLength=@codeLength
+    @guessLength=4
   end
 end

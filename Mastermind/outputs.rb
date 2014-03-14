@@ -5,7 +5,7 @@ class Outputs
     puts allGuesses
   end
   def self.welcome
-    puts "Welcome to Mastermind. How long is the Code?"
+    puts "Welcome to Mastermind. Take a guess"
   end
   def  self.win
     puts "You Win!"

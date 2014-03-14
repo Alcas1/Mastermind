@@ -33,8 +33,11 @@ class GameLoop
       pegs= Mastermind.find0s(guess1s,sudoAnswer)
       Outputs.pegs pegs
       Won.wonTest
-      Won.lostTest
-      Won.wrong
+      if !Setup.getWon
+        Outputs.wrong
+          
+          
+      end
     end
   end
 end

@@ -21,11 +21,11 @@ describe Mastermind do
   end
   it "tries green" do
     Mastermind.try([2,2,2,2],[2,2,2,2]).should == [2,2,2,2]
-    Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You Win!"
+    Mastermind.winTest(4,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You Win!"
   end
   it "tries blue" do
     Mastermind.try([3,3,3,3],[3,3,3,3]).should == [2,2,2,2]
-    Mastermind.winTest(0,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You Win!"
+    Mastermind.winTest(1,Mastermind.try([2,2,2,2],[2,2,2,2]),[2,2,2,2]).should=="You Win!"
   end
   it "tries yellow" do
     Mastermind.try([4,4,4,4],[4,4,4,4]).should == [2,2,2,2]
@@ -65,6 +65,9 @@ describe Mastermind do
   end
   it "gets all right colors" do
     Mastermind.try([1,2,3,4],[1,2,3,4]).should == [2,2,2,2]
+  end
+  it "gets all right colors out of place" do
+    Mastermind.try([4,3,2,1],[1,2,3,4]).should == [1,1,1,1]
   end
   it "gets all right colors out of place" do
     Mastermind.try([4,3,2,1],[1,2,3,4]).should == [1,1,1,1]

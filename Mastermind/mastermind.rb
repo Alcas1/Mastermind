@@ -24,8 +24,7 @@ class Mastermind
     end
     output
   end
-  def self.find1s guess2s,answer
-
+  def self.find1s(guess2s,answer)
     colors=[0,0,0,0,0,0,0,0,0]
     count=answer.length
     while count>0
@@ -35,8 +34,9 @@ class Mastermind
       end
     end
 
-    count=answer.length
-    while count>0 do count-=1
+    count=guess2s.length
+    while count>0
+      count-=1
     if colors[guess2s[count]] > 0
       colors[guess2s[count]]-=1
       guess2s << 1
@@ -46,14 +46,14 @@ class Mastermind
     end
     guess2s
   end
-  def self.find0s guess1s,answer
+  def self.find0s(guess1s,answer)
     while guess1s.length < answer.length
       guess1s<<0
     end
     guess1s.sort().reverse
   end
   def self.try(guess,answer)
-    output =[]
+    output =Array.new
     sudoGuess=guess
     count=sudoGuess.length
     while count>0
@@ -72,11 +72,11 @@ class Mastermind
         colors[answer[count]]+=1
       end
     end
-
     count=answer.length
-    while count>0 do count-=1
-    if colors[output[count]] > 0
-      colors[output[count]]-=1
+    while count>0
+      count-=1
+      if (colors[guess[count]] > 0)
+      colors[guess[count]]-=1
       output << 1
     end
     end
