@@ -35,8 +35,6 @@ class GameLoop
       Won.wonTest
       if !Setup.getWon
         Outputs.wrong
-          
-          
       end
     end
   end

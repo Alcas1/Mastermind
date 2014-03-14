@@ -6,7 +6,7 @@ require './gameLoop'
 require './Clones'
 
 class Runner
-  Output.welcome
+  Outputs.welcome
   Setup.start
   GameLoop.gameLoop
 end
